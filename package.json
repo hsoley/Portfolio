@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Professional Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsoley/Portfolio.git"
+  },
+  "author": "Homa Soleymaniha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hsoley/Portfolio/issues"
+  },
+  "homepage": "https://github.com/hsoley/Portfolio#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
