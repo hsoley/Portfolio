@@ -1,7 +1,9 @@
+
 .pageWrapper {
     width: 100vw;
     height: 100vh;
     border: solid 5px red;
+    box-sizing: border-box; /* forces the box size calculation happens considering the border and padding */
 }
 
 #page1 {
@@ -15,4 +17,10 @@
     opacity: 40%;
     width: 30%;
     height: 100%;
+}
+
+/* all other desktop styles */
+
+@media screen and  (min-width: 650px) {
+    
 }
