@@ -5,30 +5,65 @@
     box-sizing: border-box; /* forces the box size calculation happens considering the border and padding */
 }
 
+.content {
+    width: 100%;
+    height: 100%; 
+}
+
 #page1 {
     background: no-repeat url('./resource/19315.jpg') ;
     width: 100%;
     height: 100%;
 }
 
-.right1 {
-    margin-left: 60%;
+#page1_right {
     width: 40%;
+    margin-left: 60%; /* because width is 40% */
+    height: 90%;
+    margin-top: 5%; /* because height is 90% and I want equal gap on top and bottom*/
+    display: inline-block;
+}
+
+#page1_right_img {
+    width: 100%;
     height: 100%;
 }
 
-#right1 {
+#page2 {
+    background: no-repeat url('./resource/main_bg.jpg') ;
     width: 100%;
     height: 100%;
+}
+
+#page2_right {
+    width: 80%;
+    height: 40%;
+    margin-top: 7%;
+    margin-left: 20%; /* because width is 80% */
+    border: 3px solid red;
+    background-color: yellow;
+    opacity: 30%;
+    display: inline-block;
+}
+
+#page2_left {
+    width: 80%;
+    height: 40%;
+    margin-top: 6%;
+    margin-right: 20%; /* because width is 80% */
+    border: 3px solid red;
+    background-color: yellow;
+    opacity: 30%;
+    display: inline-block;
 }
 
 /* all other desktop styles */
 
 @media screen and  (min-width: 650px) {
 
-    .right1 {
-        margin-left: 70%;
+    #page1_right {
         width: 30%;
+        margin-left: 70%; /* because width is 30% */
     }
     
 }
