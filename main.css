@@ -10,60 +10,53 @@
     height: 100%; 
 }
 
+.sectionBG {
+    border: 3px solid red;
+    background-color: yellow;
+    opacity: 60%;
+}
+
 #page1 {
-    background: no-repeat url('./resource/19315.jpg') ;
-    width: 100%;
-    height: 100%;
+    background: no-repeat url('./resource/page1BG.jpg') ;
 }
 
 #page1_right {
-    width: 40%;
-    margin-left: 60%; /* because width is 40% */
-    height: 90%;
-    margin-top: 5%; /* because height is 90% and I want equal gap on top and bottom*/
-    display: inline-block;
+    position: absolute;
+    width: 40%;  /* along with left 60% */
+    left: 60%;   /* along with width 40% */
+    height: 90%; /* along with top 5% */
+    top: 5%;     /* along with height 90% */
+    /* size properties affect child img */
 }
 
 #page1_right_img {
-    width: 100%;
-    height: 100%;
+    /* size properties defined based on the parent container */
+    width: 40vw;
+    height: 90vh;
 }
 
 #page2 {
-    background: no-repeat url('./resource/main_bg.jpg') ;
-    width: 100%;
-    height: 100%;
+    background: no-repeat url('./resource/page2BG.jpg') ;
 }
 
 #page2_right {
-    width: 80%;
-    height: 40%;
-    margin-top: 7%;
-    margin-left: 20%; /* because width is 80% */
-    border: 3px solid red;
-    background-color: yellow;
-    opacity: 30%;
-    display: inline-block;
+    position: absolute;
+    width: 80%;  /* along with left 20% */
+    left: 20%;   /* along with width 80% */
+    height: 40%; /* along with top 7% and other elements in page */
+    top: 107%;   /* along with height 40% and other elements in page */
 }
 
 #page2_left {
+    position: absolute;
     width: 80%;
-    height: 40%;
-    margin-top: 6%;
-    margin-right: 20%; /* because width is 80% */
-    border: 3px solid red;
-    background-color: yellow;
-    opacity: 30%;
-    display: inline-block;
+    left: 0%;
+    height: 40%; /* along with top 53% and other elements in page */
+    top: 153%;   /* along with height 40% and other elements in page */
 }
 
 /* all other desktop styles */
 
 @media screen and  (min-width: 650px) {
-
-    #page1_right {
-        width: 30%;
-        margin-left: 70%; /* because width is 30% */
-    }
     
 }

@@ -352,5 +352,4 @@ MigrationBackup/
 .ionide/
 
 # Mac OS extra build files 
-.DS_Store/
-.DS_Store
+../.DS_Store/
